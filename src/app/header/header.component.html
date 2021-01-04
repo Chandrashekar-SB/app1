@@ -1,9 +1,11 @@
 <mat-toolbar color="primary">
     <span><img src="/assets/images/logo.png" height=30 width=41></span>
     <a mat-button routerLink='/home'  routerLinkActive="active"><span ></span> Home</a>
-    <a mat-button><span ></span> About</a>
+    <a mat-button routerLink='/about'  routerLinkActive="active"><span ></span> About</a>
     <a mat-button routerLink='/menu'routerLinkActive="active"><span ></span> Menu</a>
     <a mat-button routerLink='/contact'routerLinkActive="active"><span ></span> Contact</a>
+    <span class="flex-spacer"></span>
+    <a mat-button  (click)="openLoginForm()">Login</a>
   </mat-toolbar>
   
   <div class="container jumbotron"
